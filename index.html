@@ -3,254 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B' SHOT - menu</title>
+    <title>B' SHOT - Coffee Shop</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Loading Screen -->
-    <div id="loading-screen">
-        <div class="coffee-cup">
-            <div class="cup"></div>
-            <div class="steam"></div>
-            <div class="steam"></div>
-            <div class="steam"></div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <div class="particles-container">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
         </div>
-        <h2>B' SHOT</h2>
-        <p>جاري التحميل...</p>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-        <div class="header-bg"></div>
+        
         <div class="container">
-            <div class="logo-section">
-                <h1 class="logo">B' SHOT</h1>
-                <p class="tagline">hot or cold ?</p>
-            </div>
-            <div class="floating-elements">
-                <div class="floating-coffee"></div>
-                <div class="floating-coffee"></div>
-                <div class="floating-coffee"></div>
-            </div>
-            <!-- New elements for coffee cups and beans -->
-            <div class="coffee-cups-container">
-                <div class="coffee-cup-animated cup-1"></div>
-                <div class="coffee-cup-animated cup-2"></div>
-                <div class="coffee-cup-animated cup-3"></div>
-                <div class="coffee-cup-animated cup-4"></div>
-            </div>
-            <div class="coffee-beans-container">
-                <div class="coffee-bean bean-1"></div>
-                <div class="coffee-bean bean-2"></div>
-                <div class="coffee-bean bean-3"></div>
-                <div class="coffee-bean bean-4"></div>
-                <div class="coffee-bean bean-5"></div>
-                <div class="coffee-bean bean-6"></div>
+            <div class="hero-content">
+                <div class="logo-container">
+                    <h1 class="main-logo">B' SHOT</h1>
+                    <p class="tagline">hot or cold ?</p>
+                </div>
+                
+                <!-- Coffee Animation -->
+                <div class="coffee-scene">
+                    <div class="coffee-cup-main" id="mainCoffeeCup">
+                        <div class="cup-container">
+                            <div class="cup-body">
+                                <div class="coffee-surface"></div>
+                                <div class="cup-handle"></div>
+                            </div>
+                            <div class="steam-effects">
+                                <div class="steam"></div>
+                                <div class="steam"></div>
+                                <div class="steam"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Floating Coffee Beans -->
+                    <div class="beans-animation">
+                        <div class="bean bean-1"></div>
+                        <div class="bean bean-2"></div>
+                        <div class="bean bean-3"></div>
+                        <div class="bean bean-4"></div>
+                        <div class="bean bean-5"></div>
+                        <div class="bean bean-6"></div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+        
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-down">
+            <div class="scroll-icon">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <span>اكتشف المزيد</span>
+        </div>
+    </section>
 
     <!-- Main Content -->
     <main class="main-content">
         <div class="container">
-            <!-- Menu Image Section -->
-            
+            <!-- Download Menu Section -->
+            <section class="download-menu-section">
+                <div class="download-card">
+                    <div class="card-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h2>منيو B' SHOT</h2>
+                    <button class="download-btn" id="downloadMenuBtn">
+                        <i class="fas fa-file-download"></i>
+                        <span>تنزيل المنيو</span>
+                        <div class="btn-ripple"></div>
+                    </button>
+                </div>
+            </section>
 
             <!-- Digital Menu Section -->
             <section class="digital-menu">
-                <h2 class="section-title">
-                    <i class="fas fa-coffee"></i>
-                    menu
-                </h2>
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-coffee"></i>
+                        قائمة المشروبات
+                    </h2>
+                    <p class="section-subtitle">اختر مشروبك المفضل من تشكيلتنا المميزة</p>
+                </div>
 
-                <!-- Coffee Menu -->
+                <!-- Hot & Cold Drinks -->
                 <div class="menu-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-mug-hot"></i>
-                        المشروبات الساخنة والباردة
-                    </h3>
-                    <div class="menu-grid">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-mug-hot"></i>
+                        </div>
+                        <h3 class="category-title">المشروبات الساخنة والباردة</h3>
+                    </div>
+                    
+                    <div class="menu-items-grid">
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">قهوة تركي</span>
-                                <span class="item-price">15 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">☕</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">قهوة تركي</h4>
+                                </div>
+                                <div class="item-price">15 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">قهوة فرنساوي</span>
-                                <span class="item-price">20 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">☕</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">قهوة فرنساوي</h4>
+                                </div>
+                                <div class="item-price">20 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">اسبريسو سنجل</span>
-                                <span class="item-price">20 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">☕</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">اسبريسو سنجل</h4>
+                                </div>
+                                <div class="item-price">20 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">اسبريسو دابل</span>
-                                <span class="item-price">30 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">☕</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">اسبريسو دابل</h4>
+                                </div>
+                                <div class="item-price">30 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">ميكاتو سنجل</span>
-                                <span class="item-price">25 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">☕</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">ميكاتو سنجل</h4>
+                                </div>
+                                <div class="item-price">25 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">ميكاتو دابل</span>
-                                <span class="item-price">35 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">☕</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">ميكاتو دابل</h4>
+                                    <p class="item-description"></p>
+                                </div>
+                                <div class="item-price">35 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">نسكافيه</span>
-                                <span class="item-price">25 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">☕</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">نسكافيه</h4>
+                                    <p class="item-description">نسكافيه كريمي</p>
+                                </div>
+                                <div class="item-price">25 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">لاتيه</span>
-                                <span class="item-price">30 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">🥛</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">لاتيه</h4>
+                                    <p class="item-description"></p>
+                                </div>
+                                <div class="item-price">30 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">هوت شوكلت</span>
-                                <span class="item-price">20 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">🍫</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">هوت شوكلت</h4>
+                                    <p class="item-description"></p>
+                                </div>
+                                <div class="item-price">20 جنيه</div>
                             </div>
                         </div>
+                        
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">شاي</span>
-                                <span class="item-price">10 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">🍵</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">شاي</h4>
+                                </div>
+                                <div class="item-price">10 جنيه</div>
                             </div>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">شاي فواكه</span>
-                                <span class="item-price">10 جنيه</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">ينسون</span>
-                                <span class="item-price">10 جنيه</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">نعناع</span>
-                                <span class="item-price">10 جنيه</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">نعناع زنجبيل</span>
-                                <span class="item-price">10 جنيه</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">كركاديه</span>
-                                <span class="item-price">10 جنيه</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">اندومي</span>
-                                <span class="item-price">15 جنيه</span>
-                            </div>
-                        </div>
+                        
                         <div class="menu-item special">
-                            <div class="item-info">
-                                <span class="item-name">ميلك شيك (فراولة - مانجو - اوريو - لوتس)</span>
-                                <span class="item-price">30 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">🥤</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">ميلك شيك</h4>
+                                    <p class="item-description">فراولة - مانجو - اوريو - لوتس</p>
+                                </div>
+                                <div class="item-price">30 جنيه</div>
+                            </div>
+                            <div class="special-badge">مميز</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Juices Section -->
+                <div class="menu-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-glass-whiskey"></i>
+                        </div>
+                        <h3 class="category-title">العصائر الفريش</h3>
+                    </div>
+                    
+                    <div class="menu-items-grid">
+                        <div class="menu-item">
+                            <div class="item-content">
+                                <div class="item-icon">🥭</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">مانجو</h4>
+                                    <p class="item-description">عصير مانجو فريش</p>
+                                </div>
+                                <div class="item-price">30 جنيه</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-content">
+                                <div class="item-icon">🍓</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">فراولة</h4>
+                                    <p class="item-description">عصير فراولة فريش</p>
+                                </div>
+                                <div class="item-price">30 جنيه</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-content">
+                                <div class="item-icon">🍉</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">سموزي بطيخ</h4>
+                                    <p class="item-description">سموزي بطيخ خيالي </p>
+                                </div>
+                                <div class="item-price">30 جنيه</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-content">
+                                <div class="item-icon">🍊</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">برتقال</h4>
+                                    <p class="item-description">عصير برتقال طبيعي</p>
+                                </div>
+                                <div class="item-price">30 جنيه</div>
+                            </div>
+                        </div>
+                        
+                        <div class="menu-item">
+                            <div class="item-content">
+                                <div class="item-icon">🍋</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">ليمون نعناع</h4>
+                                    <p class="item-description">ليمون بالنعناع منعش</p>
+                                </div>
+                                <div class="item-price">25 جنيه</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Juices Menu -->
+                <!-- Desserts Section -->
                 <div class="menu-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-glass-whiskey"></i>
-                        العصائر 
-                    </h3>
-                    <div class="menu-grid">
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">مانجو</span>
-                                <span class="item-price">30 جنيه</span>
-                            </div>
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-cookie-bite"></i>
                         </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">فراولة</span>
-                                <span class="item-price">30 جنيه</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">سموزي بطيخ</span>
-                                <span class="item-price">30 جنيه</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">برتقال</span>
-                                <span class="item-price">30 جنيه</span>
-                            </div>
-                        </div>
-                        <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">ليمون نعناع</span>
-                                <span class="item-price">25 جنيه</span>
-                            </div>
-                        </div>
+                        <h3 class="category-title">الحلويات</h3>
                     </div>
-                </div>
-
-                <!-- Desserts Menu -->
-                <div class="menu-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-cookie-bite"></i>
-                        الحلويات
-                    </h3>
-                    <div class="menu-grid">
+                    
+                    <div class="menu-items-grid">
                         <div class="menu-item">
-                            <div class="item-info">
-                                <span class="item-name">وافل</span>
-                                <span class="item-price">20 جنيه</span>
+                            <div class="item-content">
+                                <div class="item-icon">🧇</div>
+                                <div class="item-details">
+                                    <h4 class="item-name">وافل</h4>
+                                </div>
+                                <div class="item-price">20 جنيه</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Contact Developer Section -->
+            <!-- Location Section -->
+            <section class="location-section">
+                <div class="location-card">
+                    <div class="location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="location-content">
+                        <h3>موقعنا</h3>
+                        <p class="location-highlight">اول كوفي كورنير في البيضا</p>
+                        <p class="location-address">كفر الدوار - مساكن البيضا - التمليك - امام مكتبه انس</p>
+                        <p class="location-slogan">طعم ميتنسيش 🤎</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
             <section class="contact-section">
                 <div class="contact-card">
-                    <div class="contact-header">
+                    <div class="contact-icon">
                         <i class="fas fa-code"></i>
-                        <h3>التواصل مع المبرمج</h3>
                     </div>
                     <div class="contact-content">
+                        <h3>التواصل مع المبرمج</h3>
                         <p>المبرمج: Ahmed Aloush</p>
                         <button class="contact-btn" onclick="openDeveloperSite()">
                             <i class="fas fa-external-link-alt"></i>
-                            تواصل معنا الآن
+                            <span>زيارة موقع المبرمج</span>
                         </button>
-                        <p class="contact-note">click for Developer website</p>
-                    </div>
-                    <div class="contact-decoration">
-                        <div class="code-symbol">&lt;/&gt;</div>
                     </div>
                 </div>
             </section>
@@ -261,37 +351,26 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <h3>B' SHOT</h3>
-                <p>best take away</p>
-                <div class="social-icons">
-                    <i class="fab fa-facebook" onclick="openFacebook()"></i>
-                    <i class="fab fa-instagram" onclick="openInstagram()"></i>
-                    <i class="fab fa-whatsapp" onclick="openWhatsApp()"></i>
+                <div class="footer-logo">
+                    <h3>B' SHOT</h3>
+                    <p>best take away</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" onclick="openFacebook()" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" onclick="openInstagram()" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" onclick="openWhatsApp()" class="social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
-    
-
     <script src="script.js"></script>
 </body>
 </html>
 
-
-
-            <!-- Location Info Section -->
-            <section class="location-section">
-                <div class="location-card">
-                    <div class="location-header">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>معلومات المكان</h3>
-                    </div>
-                    <div class="location-content">
-                                                <p>اول كوفي كورنير في البيضا</p>
-
-                        <p>كفر الدوار - مساكن البيضا - التمليك -امام مكتبه انس</p>
-                        <p>طعم ميتنسيش 🤎</p>
-                    </div>
-                </div>
-            </section>
